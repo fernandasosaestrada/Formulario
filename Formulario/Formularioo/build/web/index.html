@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title> Formulario </title>
+        <style>
+            input {
+                background-color: pink;
+                color: gray;
+                border-radius: 5px;
+                text-weight: bold;
+                align: center;
+            }
+            select{ 
+                background-color: pink;
+                color: gray;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <form name = "formulario" method = "POST" action="inicioSesion.jsp">
+            <center> 
+                <label for="txtNombre"> Nombre: </label>
+                <input type="text" name="Nombre" id="Nombre" placeholder="Ingrese su nombre(s)"> <br/> <br/>
+                <label for="txtApellidoP"> Apellido Paterno: </label>
+                <input type="text" name="ApellidoPaterno" id="ApellidoPaterno" placeholder="Ingrese su Apellido Paterno"> <br/> <br/>
+                <label for="txtApellidoM"> Apellido Materno: </label>
+                <input type="text" name="ApellidoMaterno" id="ApellidoMaterno" placeholder="Ingrese su Apellido Materno"> <br/> <br/>
+                <label for="txtEscuela"> Escuela: </label>
+                <input type="text" name="Escuela" placeholder="Ingrese su Escuela"> <br/> <br/>
+                <select id="Genero" name="Genero">
+                    <option value = "1"> Hombre </option>
+                    <option value = "2"> Mujer </option>
+                    <option value = "3"> Indeterminado </option> 
+                </select>
+                    <input type="submit" value="REGISTRAR" name="btnReg" id="btnReg"> 
+            </center>
+        </form>
+
+    </body>
+</html>
